@@ -1,0 +1,12 @@
+{
+  "stuff": [
+    {
+      "name": "tomato",
+      "id": 1
+    },
+    {
+      "name": "onion",
+      "id": 2
+    }
+  ]
+}
