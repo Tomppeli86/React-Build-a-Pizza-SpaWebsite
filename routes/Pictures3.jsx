@@ -1,12 +1,11 @@
 import * as React from 'react';
 import { Outlet, Link } from "react-router-dom";
 import axios from 'axios'
-import { useState, useEffect } from 'react';
-
+import { useRef, useState, useEffect } from 'react';
+import DraggableComponent from '../DraggableComponent';
 
 export default function Pictures() {
   const [stuff, setStuff] = useState( [  ] )
-
 
 
 
@@ -23,6 +22,8 @@ export default function Pictures() {
 
 
 
+
+
   return (
 
     <div>
@@ -32,12 +33,17 @@ export default function Pictures() {
               
                 <p>Fillit'</p>
 
-                {stuff.map((fill) => (
-                <li key={fill.id}>
-                {console.log(fill.name)} <img src={"/kuvat/"+ fill.name +".png"} className="chosenfillings"/>
-                <br></br>
+                <DraggableComponent/>
+
+
+
+
+
+
+
+
+
                 
-                </li>))}
 
               
           </div>
