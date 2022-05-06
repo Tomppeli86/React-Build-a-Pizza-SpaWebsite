@@ -119,22 +119,9 @@ const useDraggable = ({ onDrag = id } = {}) => {
 
 
 
-
-
-const DraggableComponent = () => {
-
-  const [stuff, setStuff] = useState( [  ] )
-
-  const hook = () => {
-    axios
-      .get('http://localhost:3001/stuff')
-      .then(response => {
-        console.log('promise fulfilled')
-        setStuff(response.data)
-        console.log(response.data)
-     })  
-  }
-  useEffect(hook, [])
+const DraggableComponent = ({props}) => {
+  
+  console.log(props)
 
 
 
@@ -143,8 +130,9 @@ const DraggableComponent = () => {
 
   const handleDrag = useCallback(
     ({ x, y }) => ({
-      x: Math.max(0, x),
-      y: Math.max(0, y)
+      x: Math.max(-200, x),
+      
+      y: Math.max(-500, y)
     }),
     []
   );
@@ -153,19 +141,25 @@ const DraggableComponent = () => {
     onDrag: handleDrag
   });
 
+    
+
+  
   return (
-    <div>
-        {stuff.map((fill) => (
-          <img key={fill.id} src={"/kuvat/"+ fill.name +".png"} className={fill.name} 
-            ref={ref} style={quickAndDirtyStyle} onMouseDown={handleMouseDown}/>
-         ))}     
+    <div className="tomato">
+
+          <img src={"/kuvat/" +props+ ".png"} className={props}
+            ref={ref} onMouseDown={handleMouseDown} style={quickAndDirtyStyle}/> 
+         
     </div>
+
+    
+    
   );
 };
 
 // please, don't `export default`! it messes up autocompletion,
 // usage search and regular text search in IDE!
-//export default DraggableComponent
+// export default DraggableComponent
 
 export default function App() {
   return (
@@ -174,3 +168,5 @@ export default function App() {
     </div>
   );
 }
+
+
