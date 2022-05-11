@@ -1,4 +1,4 @@
 # React-Build-a-Pizza-SpaWebsite
-![Untitled](https://user-images.githubusercontent.com/99166139/167932449-c911ae1b-800e-4f50-b3bd-a18e9d3fabca.png)
-![Untitled1](https://user-images.githubusercontent.com/99166139/167932463-e05d0666-a32a-4f62-b02e-a23d377748b9.png)
-![Untitled2](https://user-images.githubusercontent.com/99166139/167932471-addaaf7d-50e6-4613-8ccc-216c16780316.png)
+![Untitled](https://user-images.githubusercontent.com/99166139/167933469-3bcf7740-86f3-4f4e-8343-bb05a6b9aa6a.png)
+![Untitled1](https://user-images.githubusercontent.com/99166139/167933477-38f4af5d-e0cc-42a3-8237-bf947b9e7c4f.png)
+![Untitled2](https://user-images.githubusercontent.com/99166139/167933490-11e30439-a225-490f-ac6c-b84782b265fe.png)
